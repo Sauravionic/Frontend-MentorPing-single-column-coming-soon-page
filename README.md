@@ -32,7 +32,7 @@ Users should be able to:
 ![](./screenshot.jpg)
 ![Mobile Responsive](./images/mobile.png)
 ![Desktop Responsive](./images/desktop.png)
-![Active State](./active.png)
+![Active State](./images/active.png)
 
 ### Links
 
