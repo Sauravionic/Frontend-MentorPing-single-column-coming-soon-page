@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,600;0,700;1,300;1,600;1,700&display=swap');
+
+:root {
+    --blue: hsl(223, 87%, 63%);
+    --paleBlue: hsl(223, 100%, 88%);
+    --lightRed: hsl(354, 100%, 66%);
+    --gray: hsl(0, 0%, 59%);
+    --vryDarkBlue: hsl(209, 33%, 12%);
+}
+html {
+    box-sizing: border-box;
+}
+*,*::before,*::after {
+    box-sizing: inherit;
+}
+body {
+    display: flex;
+    text-align: center;
+    font-family: 'Libre Franklin',sans-serif;
+    font-size: 15px;
+}
+
+.container {
+    margin: 40px auto;
+    padding: 0 15px;
+    max-width: 440px;
+}
+
+.logo img {
+    width: 100%;
+    height: 20px;
+    width: 60px;
+}
+
+.header {
+    padding: 20px 20px 20px 20px;
+}
+.header h1 {
+    font-size: 25px;
+    color: var(--vryDarkBlue);
+}
+.header h1 span {
+    font-weight: 300;
+    color: var(--paleBlue);
+}
+.header p {
+    color: var(--vryDarkBlue);
+    font-size: 14px;
+}
+
+.fields {
+    margin-top: 30px;
+}
+.fields .form-content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.form-content .inputs {
+    display: flex;
+    flex-direction: column;
+}
+.form-content input {
+    height: 45px;
+    padding: 0 25px 0 25px;
+    font-family: inherit;
+    border: 1px solid var(--paleBlue);
+    border-radius: 30px;
+    outline: none;
+}
+.form-content input::placeholder {
+    color: var(--paleBlue);
+}
+
+.form-content.error label {
+    color: var(--lightRed);
+    font-size: 12px;
+    font-style: italic;
+}
+.form-content.success label{
+    display: none;
+}
+
+.form-content.error i {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    color: var(--lightRed);
+}
+.form-content.success i{
+    display: none;
+}
+
+.form-content button {
+    font-family: inherit;
+    font-weight: 600;
+    letter-spacing: 1px;
+    height: 45px;
+    margin-top: 15px;
+    border-radius: 30px;
+    background-color: var(--blue);
+    border: none;
+    color: #fff;
+    box-shadow: hsla(223, 87%, 63%,0.7) 0px 3px 8px;
+    cursor: pointer;
+    transition: transform .2s;
+}
+.form-content button:hover {
+    background-color: hsl(223, 87%, 70%);
+    transform: scale(1.08);
+}
+
+
+.content {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.content img {
+    width: 100%;
+}
+
+.footer .icons {
+    display: flex;
+    justify-content: center;
+}
+
+.icons a {
+    cursor: pointer;
+    color: var(--blue);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.icons a i {
+    border: 1px solid var(--paleBlue);
+    width: 36px;
+    height: 36px;
+    border-radius: 18px;
+    padding-top: 10px;
+    padding-left: 1px;
+}
+
+.icons a i:hover {
+    color: #fff;
+}
+
+.fab:hover {
+    background-color: var(--blue);
+}
+
+.footer p {
+    margin-top: 25px;
+    font-size: 14px;
+    color: var(--gray);
+}
+
+
+@media only screen and (min-width:1000px) {
+
+    .container {
+        max-width: 750px;
+        margin:40px auto;
+    }
+    .header h1 {
+        font-size: 40px;
+        margin: 0;
+    }
+    .header p {
+        font-size: 15px;
+    }
+    .fields .form-content {
+        flex-direction: row;
+        text-align: left;
+    }
+    .form-content .inputs {
+        flex-basis: 60%;
+    }
+    .form-content button {
+        margin: 0 0 0 15px;
+        flex-basis: 40%;
+    }
+    .form-content label {
+        padding-left: 30px;
+    }
+    .form-content.error i {
+        top: 13px;
+        right: 300px;
+    }
+}
