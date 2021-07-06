@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Sauravionic/Frontend-MentorPing-single-column-coming-soon-page)
-- Live Site URL: [Add live site URL here](https://sauravionic.github.io/Frontend-MentorPing-single-column-coming-soon-page/)
+- Solution URL: [Click for git repo](https://github.com/Sauravionic/Frontend-MentorPing-single-column-coming-soon-page)
+- Live Site URL: [Click for live site](https://sauravionic.github.io/Frontend-MentorPing-single-column-coming-soon-page/)
 
 
 ### Built with
