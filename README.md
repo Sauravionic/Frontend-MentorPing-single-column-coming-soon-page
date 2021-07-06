@@ -1,0 +1,1 @@
+# Frontend-MentorPing-single-column-coming-soon-page
